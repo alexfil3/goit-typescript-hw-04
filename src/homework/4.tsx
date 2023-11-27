@@ -33,7 +33,7 @@ const MenuActionContext = createContext<MenuAction>({
 });
 
 function MenuProvider({ children }: PropsProvider) {
-  const [selectedMenu, setSelectedMenu] = useState<SelectedMenu>({});
+  const [selectedMenu, setSelectedMenu] = useState<SelectedMenu>({id: "first"});
 
   const menuContextAction = useMemo(
     () => ({
